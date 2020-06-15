@@ -1,12 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      </head>
+
+<body>
+
+<h1> Checking UDP connection </h1>
+
+<p> 
 Many a time we need to test connectivity between two servers, for e.g., if my application servers is able to tonnect to remote Database
 or not. We user Telnet to check the connectivity. Since, databse servers listen on tcp port for example Postgres server default port is 5432 
 telnet can help us check connectivity.
 we use telnet as shown below
+</p>
 
 telnet <hostfqdn/ip> <port>
 
+
+<p> 
 What if service running is not using TCP port, instead it uses UDP port like SNMP. SNMP work on port 161/162 (port 162 is used for SNMP Trap).
 How do we check if there is a firewall blocking connection from one host to other. Netcat works similar to telnet but with udp port.
 So, if I want to cheeck if I can connect to a remore snmp client from my server I would use netcat as shown below.
+</p>
 
 nc <IP/fqdn>
+
+</body>
+</html>
